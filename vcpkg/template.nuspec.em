@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-depthimage-to-laserscan</id>
-    <version>2.2.1</version>
-    <title>ros-dashing-depthimage-to-laserscan</title>
-    <authors>Chris Lalancette <clalancette@openrobotics.org></authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>depthimage_to_laserscan</description>
-<dependencies>
-      <dependency id="ros-dashing-image-geometry"/>
-      <dependency id="ros-dashing-rclcpp"/>
-      <dependency id="ros-dashing-sensor-msgs"/>
-      <dependency id="ros-dashing-ros-workspace"/>
+    <description>@(Description)</description>
+    <dependencies>
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
